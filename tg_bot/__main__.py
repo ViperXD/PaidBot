@@ -19,8 +19,8 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-I am Exclusively Maded For Movies Factory Group. 
-You Can't Use Me🤣.
+I AM A GROUP MANAGING BOT
+BUT DON'T WASTE TIME.I WORK ONLY IN MY OWNER GROUP
 
 """
 
@@ -137,7 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Group", url="https://t.me/MoviesFactory_Chat"), InlineKeyboardButton(text="Channel", url="https://t.me/MovieesFactory") ]]))
+                    [[InlineKeyboardButton(text="Group", url="https://t.me/MC_GROUPS"), InlineKeyboardButton(text="Channel", url="https://t.me/MALLUCINEMAS_CHANNEL") ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
