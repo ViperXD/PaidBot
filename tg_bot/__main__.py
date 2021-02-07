@@ -137,8 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="DEV", url="t.me/VKPROJECTS")],
-                     [InlineKeyboardButton(text="Group", url="https://t.me/MoviesFactory_Chat")],
+                    [[InlineKeyboardButton(text="Group", url="https://t.me/MoviesFactory_Chat")],
                      [InlineKeyboardButton(text="Channel", url="https://t.me/MovieesFactory") ]]))
 
     else:
