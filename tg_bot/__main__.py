@@ -20,7 +20,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 
 I AM A GROUP MANAGING BOT
-BUT DON'T WASTE TIME.I WORK ONLY IN MY OWNER GROUP
+BUT DON'T WASTE TIME.I WORK ONLY IN MY GROUP
 
 """
 
@@ -40,7 +40,7 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """അതിന്റെ ആവശ്യം ഇല്ല."""
+DONATE_STRING = """thanks."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -137,10 +137,10 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Group", url="https://t.me/MC_GROUPS"), InlineKeyboardButton(text="Channel", url="https://t.me/MALLUCINEMAS_CHANNEL") ]]))
+                    [[InlineKeyboardButton(text="🎉Group", url="https://t.me/Vk_bots"), InlineKeyboardButton(text="🔔Channel", url="https://t.me/Vkprojects") ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("Hello.....")
 
 
 # for test purposes
@@ -370,7 +370,7 @@ def donate(bot: Bot, update: Update):
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
         if OWNER_ID != 254318997 and DONATION_LINK:
-            update.effective_message.reply_text("👆🏻മുകളിലെ Messege നോക്ക്"
+            update.effective_message.reply_text("You Can Donate Me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
 
