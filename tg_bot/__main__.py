@@ -19,8 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-I AM A GROUP MANAGING BOT
-BUT DON'T WASTE TIME.I WORK ONLY IN MY GROUP
+ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ മലയാളം മൂവീസ് ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ.
 
 """
 
