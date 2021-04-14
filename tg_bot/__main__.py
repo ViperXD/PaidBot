@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ മലയാളം മൂവീസ് ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ.
+ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ @HNMED ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ.
 
 """
 
@@ -124,7 +124,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉Group", url="https://t.me/Vkp_bots"), InlineKeyboardButton(text="🔔Channel", url="https://t.me/Vkprojects") ]]))
+                    [[InlineKeyboardButton(text="🎉Group", url="https://t.me/joinchat/CSA1Ec3NywI3ZGQ1"), InlineKeyboardButton(text="🔔Channel", url="https://t.me/joinchat/LN_fR9zIBhJjNmI9") ]]))
 
     else:
         update.effective_message.reply_text("Hello.....")
