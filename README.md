@@ -1,7 +1,7 @@
 # tgbot
 A  deploy me on heroku, use below button:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/v-v-r-official/PaidBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
 
 There is also a [tutorial video](https://youtu.be/W6CLKrehy6w) if you want any help on creating heroku clone.
 
